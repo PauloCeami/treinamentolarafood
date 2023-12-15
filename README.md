@@ -115,6 +115,12 @@ sudo chmod -R 777 ./*
 PERMISSAO PARA INSTALAR BIBLIOTECAS 
 chmod 777 -R vendor/*
 
+./composer.json is not writable.
+
+chmod 777 -R composer.json
+
+chmod 777 -R composer.lock
+
 
 
 ****************************************************************************************
