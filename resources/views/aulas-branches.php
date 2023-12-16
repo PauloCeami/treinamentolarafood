@@ -1,0 +1,15 @@
+
+<ul class="classes" style=""><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+01 - Criar Model e Migration de Planos no Laravel</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+        02 - Organizar Rota e Preparar Listagem dos Planos no Laravel</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                03 - Listar os Planos do LaraFood</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                        04 - Paginar os Planos do LaraFood</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                                05 - Cadastrar Novo Plano no LaraFood</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                                        06 - Mostrar Detalhes do Plano no LaraFood</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                                                07 - Deletar o Plano no LaraFood</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                                                        08 - Pesquisar um plano no LaraFood</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                                                                09 - Breadcrumb no LaraFood</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                                                                        10 - Melhorias no módulo de planos no LaraFood</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                                                                                11 - Atualizar o plano do LaraFood</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                                                                                        12 - Validar Planos do LaraFood</span></li><li class="animate__animated animate__fadeIn"><span class="check fas fa-check active"></span><span class="nameLesson">
+                                                                                                13 - Criar Observer de Plano no LaraFood</span></li></ul>
