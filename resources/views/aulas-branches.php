@@ -9,7 +9,7 @@ git pull origin main
 >>git checkout -b feature/02-GestaoPlanos-01-Criar-Model-e-Migration-de-Planos-no-Laravel
 >>git checkout -b feature/02-GestaoPlanos-02-Organizar-Rota-e-Preparar-Listagem-dos-Planos-no-Laravel
 >>git checkout -b feature/02-GestaoPlanos-03-Listar-os-Planos-do-LaraFood
-git checkout -b feature/02-GestaoPlanos-04-Paginar-os-Planos-do-LaraFood
+>>git checkout -b feature/02-GestaoPlanos-04-Paginar-os-Planos-do-LaraFood
 git checkout -b feature/02-GestaoPlanos-05-Cadastrar-Novo-Plano-no-LaraFood
 git checkout -b feature/02-GestaoPlanos-06-Mostrar-Detalhes-do-Plano-no-LaraFood
 git checkout -b feature/02-GestaoPlanos-07-Deletar-o-Plano-no-LaraFood
