@@ -3,14 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Plans;
 
 class PlansController extends Controller {
 
-    /**
-     * Display a listing of the resource.
-     */
+    private $repository;
+
+    public function __construct(Plans $plans) {
+        $this->repository = $plans;
+    }
+
     public function index() {
-        return view('admin.plans.index');
+
+        $plans = $this->repository->all();
+        $resource = " Listagem de Planos";
+
+        return view('admin.plans.index', [
+            'plans' => $plans,
+            'res' => $resource
+        ]);
     }
 
     /**
