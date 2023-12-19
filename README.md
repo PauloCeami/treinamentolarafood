@@ -13,6 +13,35 @@ alias sfs='sail migrate:fresh --seed'
 
 
 ****************************************************************************************
+
+ATENÇÃO ENTRAR DIRETO NO CONTAINNER DO MYSQL PRA EXECUTAR OS COMMANDOS SQL 
+
+docker ps -a 
+
+ddc1c0c16a65   mysql/mysql-server:8.0   "/entrypoint.sh mysq…"   2 days ago   Up 2 days (healthy)     0.0.0.0:3306->3306/tcp, :::3306->3306/tcp, 33060-33061/tcp                               treinamentolarafood-mysql-1
+
+DOCKER EXEC -IT ddc1c0c16a65 BASH
+
+mysql> describe plans;
++-------------+-----------------+------+-----+---------+----------------+
+| Field       | Type            | Null | Key | Default | Extra          |
++-------------+-----------------+------+-----+---------+----------------+
+| id          | bigint unsigned | NO   | PRI | NULL    | auto_increment |
+| name        | varchar(255)    | NO   | UNI | NULL    |                |
+| url         | varchar(255)    | NO   | UNI | NULL    |                |
+| description | varchar(255)    | YES  |     | NULL    |                |
+| price       | double(10,2)    | NO   |     | NULL    |                |
+| active      | tinyint(1)      | NO   |     | NULL    |                |
+| created_at  | timestamp       | YES  |     | NULL    |                |
+| updated_at  | timestamp       | YES  |     | NULL    |                |
++-------------+-----------------+------+-----+---------+----------------+
+
+mysql> insert into plans (name,url,description,price,active) values('plano ouro','https://meusite.com.br','esta e uma descricao do plano',9.99,1);
+Query OK, 1 row affected (0.02 sec)
+
+
+****************************************************************************************
+
 UPDATE PASSWORD USER ROOT MYSQL
 ALTER USER 'sail'@'%' IDENTIFIED BY '123';
 FLUSH PRIVILEGES;
@@ -38,6 +67,8 @@ mysql> select user,host from user;
 
 mysql> ALTER USER 'sail'@'localhost' IDENTIFIED BY '123';
 ERROR 1396 (HY000): Operation ALTER USER failed for 'sail'@'localhost'
+
+
 mysql> ALTER USER 'sail'@'%' IDENTIFIED BY '123';
 Query OK, 0 rows affected (0.01 sec)
 
