@@ -15,7 +15,7 @@ class PlansController extends Controller {
 
     public function index() {
 
-        $plans = $this->repository->all();
+        $plans = $this->repository->paginate(3);
         $resource = " Listagem de Planos";
 
         return view('admin.plans.index', [

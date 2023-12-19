@@ -9,7 +9,7 @@
 @section('content')
 <div class="card">
     <div class="card-header">
-       {{ $res }}
+        {{ $res }}
     </div>
     <div class="card-body">
         <table class="table">
@@ -29,13 +29,17 @@
                     <td>{{ $plan->name }}</td>
                     <td>{{ $plan->price }}</td>
                     <td>{{ $plan->active }}</td>
+                    <td>
+                        <a class="btn btn-warning" href="">atualizar</a>
+                    </td>
+
                 </tr>
                 @endforeach
             </tbody>
         </table>
     </div>
     <div class="card-footer">
-        2 days ago
+        {{ $plans->links() }}
     </div>
 </div>
 @stop
